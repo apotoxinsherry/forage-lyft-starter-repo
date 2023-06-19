@@ -15,4 +15,4 @@ class SpindlerBattery(Battery):
         if self.current_date.month < self.last_service_date.month or (self.current_date.month == self.last_service_date.month and self.current_date.day < self.last_service_date.day):
             difference -= 1
         
-        return difference>2
+        return difference>3
